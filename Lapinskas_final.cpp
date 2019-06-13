@@ -484,7 +484,7 @@ void ofsprnt1()
 {
 	counter++;
 
-	if (counter == tranaday[vectpos] && vectpos <= 8)
+	if (vectpos <= 8 && counter == tranaday[vectpos])
 	{
 		ofs << left << pipe << setw(13) << dates[vectpos];
 
